@@ -1,0 +1,27 @@
+<div class="card m-5" style="background-color:#e9ecef;">
+    <div class="card-body m-1">
+        <div class="jumbotron text-center" style="padding:2rem 1rem;margin-bottom:0px !important">
+
+            <h1>Welcome to The ArticleHub&nbsp;<i class="fa fa-yelp fa-lg"></i></h1>
+        </div>
+        {{#if showDiv.length}}
+
+        <h4>Login</h4>
+        <form class="form-group" action="/login" method="post">
+            <div class="my-2">
+                <label>Username:</label>
+                <input class="form-control" type="text" name="username" placeholder="Enter username" autofocus />
+            </div>
+            <div class="my-2">
+                <label>Password:</label>
+                <input class="form-control" type="password" name="password" placeholder="Enter password" />
+            </div>
+            <div class="my-3">
+                <button class="btn btn-primary clickable" type="submit">Login</button>&nbsp;&nbsp;
+                <a class="btn btn-secondary clickable" href="/signup">Create an Account</a>
+            </div>
+        </form>
+        {{/if}}
+
+    </div>
+</div>
