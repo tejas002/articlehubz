@@ -1,0 +1,26 @@
+<div class="card m-5">
+    <div class="card-body m-1">
+        <h1>Login</h1>
+        {{#if message.length}}
+        <div class="alert alert-danger">{{message}}</div>
+        {{/if}}
+        {{#if infoMessage.length}}
+        <div class="alert alert-info">{{infoMessage}}</div>
+        {{/if}}
+        <form class="form-group" action="/login" method="post">
+            <div class="my-2">
+                <label>Username:</label>
+                <input class="form-control" type="text" name="username"  autofocus placeholder="Enter username"/>
+            </div>
+            <div class="my-2">
+                <label>Password:</label>
+                <input class="form-control" type="password" name="password" placeholder="Enter password"/>
+            </div>
+            <div class="my-3">
+                <button class="btn btn-primary clickable" type="submit">Login</button>&nbsp;&nbsp;
+                <a class="btn btn-secondary clickable" href="/signup">Create an Account</a>
+            </div>
+        </form>
+    </div>
+</div>
+
