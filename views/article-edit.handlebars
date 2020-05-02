@@ -1,0 +1,23 @@
+<div class="card m-4">
+    <div class="card-body">
+        <h1>Edit "{{article.title}}"</h1>
+        <form action="/articles/edit/{{article._id}}?_method=put" method="post">
+            <div class="form-group">
+                <label for="articleTitle">Article Title</label>
+                <input class="form-control" type="text" name="article[title]" value="{{article.title}}" placeholder="Enter title" autofocus />
+            </div>
+            <div class="form-group">
+                <label for="articleUrl">Article Url</label>
+                <input class="form-control" type="text" name="article[url]" value="{{article.url}}" placeholder="Enter url" />
+            </div>
+            <div class="form-group">
+                <label for="articleDescription">Article Description</label>
+                <input class="form-control" type="text" name="article[description]" value="{{article.description}}" placeholder="Enter description" />
+            </div>
+            <button class="btn btn-primary clickable" type="submit">Update</button>
+            <form action="/articles">
+                <button class="btn btn-danger clickable" type="submit">Cancel</button>
+            </form>
+        </form>
+    </div>
+</div>
