@@ -1,6 +1,6 @@
 // require a connected instance of mongoose from ./connection.js
 const mongoose = require('./connection')
-const bcrypt = require('bcrypt-nodejs')
+const bcrypt = require('bcryptjs')
 
 // define a Schema variable to create a new schema with
 const Schema = mongoose.Schema
