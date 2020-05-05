@@ -13,6 +13,7 @@ const cookieParser = require('cookie-parser')
 const flash = require('connect-flash')
 
 const app = express()
+app.use(morgan('dev'))
 
 // app.use(express.static(__dirname + '/public'))
 app.use('/assets', express.static('public'))
@@ -23,7 +24,6 @@ app.set('view engine', 'handlebars')
 // middleware configs
 app.use(methodOverride('_method'))
 app.use(bodyParser.urlencoded({ extended: true }))
-app.use(morgan('dev'))
 app.use(cookieParser())
 
 app.use(session(
