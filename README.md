@@ -13,7 +13,7 @@ Have a look-[articlehubz](https://article-hub.herokuapp.com/).
 * MongoDB & Mongoose
 * Handlebars Templating
 * Passport.js Authentication
-* BCrypt Hashing for encrypting user password
+* BCrypt Hashing for encrypting user  password
 * Bootstrap v4 for responsive client side design
 
 Used Full CRUD Functionality for implementation
